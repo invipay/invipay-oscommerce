@@ -1,0 +1,4 @@
+[submodule "ext/invipay"]
+	path = ext/invipay
+	url = https://github.com/invipay/invipay-php-api.git
+	branch = master
