@@ -25,7 +25,7 @@
 				$this->title .= '<br />'.MODULE_PAYMENT_INVIPAY_MINCART_INFO;
 			}
 		}
-		if(is_object($order) && $billto){
+		if(is_object($order) && $billto && defined('MODULE_PAYMENT_INVIPAY_NIP_FIELD')){
 			$nip_query = tep_db_query('select '.MODULE_PAYMENT_INVIPAY_NIP_FIELD.' from '.TABLE_ADDRESS_BOOK.' where address_book_id = '.(int)$billto);
 			$nip = tep_db_fetch_array($nip_query);
 			if(!tep_not_null($nip[MODULE_PAYMENT_INVIPAY_NIP_FIELD])){
