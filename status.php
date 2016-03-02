@@ -1,5 +1,5 @@
 <?php
-if(isset($_GET['action']) && $_GET['action'] == 'statusanvipay'){
+if(isset($_GET['action']) && $_GET['action'] == 'statusinvipay'){
 ini_set('track_errors', '1');
 ini_set('display_errors', true);
 
