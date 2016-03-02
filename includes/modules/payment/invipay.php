@@ -103,10 +103,10 @@
 	  $request = new PaymentCreationData(); 
 	  if(ENABLE_SSL){
 		$request->setReturnUrl(HTTPS_SERVER.DIR_WS_HTTPS_CATALOG.FILENAME_CHECKOUT_SUCCESS);
-		$request->setStatusUrl(HTTPS_SERVER.DIR_WS_HTTPS_CATALOG.'ext/invipay/status.php?action=statusanvipay');
+		$request->setStatusUrl(HTTPS_SERVER.DIR_WS_HTTPS_CATALOG.'invipay_status.php?action=statusinvipay');
 	  } else {
 		$request->setReturnUrl(HTTP_SERVER.DIR_WS_HTTP_CATALOG.FILENAME_CHECKOUT_SUCCESS);
-		$request->setStatusUrl(HTTPS_SERVER.DIR_WS_HTTPS_CATALOG.'ext/invipay/status.php?action=statusanvipay');
+		$request->setStatusUrl(HTTPS_SERVER.DIR_WS_HTTPS_CATALOG.'invipay_status.php?action=statusinvipay');
 	  }
 	  $request->setDocumentNumber($insert_id);
 	  
